@@ -1,0 +1,81 @@
+# ========================
+# Python cache
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# ========================
+# Virtual Environment
+# ========================
+venv/
+env/
+ENV/
+.venv/
+
+# ========================
+# Django
+# ========================
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+
+# migrations (optional - usually NOT ignore in real project)
+# */migrations/*.py
+# */migrations/*.pyc
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Testing / coverage
+# ========================
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+
+# ========================
+# Django collectstatic
+# ========================
+staticfiles/
+
+# ========================
+# Pytest / tox
+# ========================
+.pytest_cache/
+.tox/
+
+# ========================
+# Distribution / packaging
+# ========================
+dist/
+build/
+*.egg-info/
