@@ -3,12 +3,40 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-<h1>Contact Me</h1>
-<p>You can contact me using the information below.</p>
 
-<div class="card">
-    <p><strong>Email:</strong> your-email@gmail.com</p>
-    <p><strong>Phone:</strong> +8801XXXXXXXXX</p>
-    <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+<section class="page-header">
+    <h1>Contact Me</h1>
+    <p>Let’s work together</p>
+</section>
+
+<div class="contact-wrapper">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h2>📩 Get in Touch</h2>
+        <p>If you have any project or job opportunity, feel free to reach out.</p>
+
+        <div class="info-box">
+            <p>📧 Email: yourmail@example.com</p>
+            <p>📱 Phone: +880 1XXXXXXXXX</p>
+            <p>📍 Location: Bangladesh</p>
+        </div>
+
+        <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
 </div>
+
 {% endblock %}

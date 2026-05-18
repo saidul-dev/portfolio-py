@@ -3,18 +3,51 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-<h1>About Me</h1>
-<p>
-    Hi, I am a Django Developer. I build web applications using Python and Django.
-</p>
 
-<div class="card">
-    <h3>Skills</h3>
-    <ul>
-        <li>Python</li>
-        <li>Django</li>
-        <li>HTML, CSS</li>
-        <li>JavaScript</li>
-    </ul>
+<section class="page-header">
+    <h1>About Me</h1>
+    <p>Who I am and what I do</p>
+</section>
+
+<div class="about-container">
+
+    <div class="about-card">
+        <h2>👋 Hello, I'm a Developer</h2>
+        <p>
+            I am a passionate Full Stack Web Developer with experience in building
+            modern, scalable web applications using Django, DRF, and React.
+        </p>
+
+        <p>
+            I enjoy solving real-world problems, building APIs, and creating clean UI experiences.
+            My focus is on writing clean, maintainable and production-ready code.
+        </p>
+
+        <div class="skills">
+            <span>Python</span>
+            <span>Django</span>
+            <span>Django REST</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>JavaScript</span>
+        </div>
+    </div>
+
+    <div class="about-card">
+        <h2>💼 Experience</h2>
+
+        <ul class="timeline">
+            <li>
+                <strong>Backend Developer</strong> - Freelance Projects<br>
+                <small>2024 - Present</small>
+            </li>
+            <li>
+                <strong>Full Stack Projects</strong> - Personal Learning<br>
+                <small>Multiple Django + API systems built</small>
+            </li>
+        </ul>
+    </div>
+
 </div>
+
 {% endblock %}

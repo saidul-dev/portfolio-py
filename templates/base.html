@@ -1,34 +1,51 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Portfolio{% endblock %}</title>
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">My Portfolio</h2>
+    <header class="header">
+        <div class="container nav-container">
+            <h2 class="logo">DevPortfolio</h2>
 
             <ul class="menu">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
-    <main class="container">
-        {% block content %}
-        {% endblock %}
+    <section class="hero">
+        <div class="container">
+            <h1>Hi, I'm a Full Stack Developer</h1>
+            <p>I build modern web applications using Django & React.</p>
+            <a href="{% url 'contact' %}" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <main class="container content">
+        {% block content %}{% endblock %}
     </main>
 
     <footer class="footer">
-        <p>© 2026 My Portfolio | Built with Django</p>
+        <div class="container">
+            <p>© 2026 DevPortfolio | Built with Django 💙</p>
+        </div>
     </footer>
 
 </body>
+
 </html>
